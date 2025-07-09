@@ -1,0 +1,561 @@
+{
+  "status": true,
+  "splashs": [
+    {
+      "placement": "I_Splash",
+      "name": "I_Splash",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8327046494",
+        "id_max": ""
+      },
+      "description": "",
+      "timeout": 30
+    }
+  ],
+  "appOpens": [
+    {
+      "placement": "O_Open_Ad",
+      "name": "O_Open_Ad",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/7497180554",
+        "id_max": "becc24b3c5250f96"
+      },
+      "description": ""
+    }
+  ],
+  "rewardeds": [
+    {
+      "placement": "R_Knife",
+      "name": "R_Knife",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2054966392",
+        "id_max": "05270d98488dd874"
+      },
+      "description": "Khi user muốn unlock knife khóa-> Hiển thị gợi ý watch video"
+    },
+    {
+      "placement": "R_CP",
+      "name": "R_CP",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2054966392",
+        "id_max": ""
+      },
+      "description": "Khi user muốn unlock chopping board khóa-> Hiển thị gợi ý watch video"
+    },
+    {
+      "placement": "R_Food",
+      "name": "R_Food",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2054966392",
+        "id_max": ""
+      },
+      "description": "Khi user muốn unlock Ingredient khóa-> Hiển thị gợi ý watch video"
+    },
+    {
+      "placement": "R_More",
+      "name": "R_More",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8618690537",
+        "id_max": ""
+      },
+      "description": "Khi user sử dụng hết lượt free mà muốn play tiếp -> Hiển thị gợi ý watch video"
+    },
+    {
+      "placement": "R_WaterMark",
+      "name": "R_WaterMark",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/7305608863",
+        "id_max": "05270d98488dd874"
+      },
+      "description": "Remove Water mark -> chon watch video to remove water mark in this video"
+    }
+  ],
+  "rewardedInterstitials": [
+    {
+      "placement": "R_Interstitial",
+      "name": "R_Interstitial",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3940256099942544/6978759866",
+        "id_max": ""
+      },
+      "description": ""
+    }
+  ],
+  "interstitials": [
+    {
+      "placement": "I_Banner_Tutorial",
+      "name": "I_Banner_Tutorial",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3940256099942544/4411468910",
+        "id_max": ""
+      },
+      "description": "Khi user click try now ở banner lần đầu -> inter -> chuyển đến màn tutorial, các lần sau thi k đến màn tutorial nữa mà đến luôn màn quay",
+      "start": 2,
+      "frequency": 2
+    },
+    {
+      "placement": "I_FirstTry_Tutorial",
+      "name": "I_FirstTry_Tutorial",
+      "status": true,
+      "isAuto": true,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": "03fb90b601948589"
+      },
+      "description": "Khi user click try now ở màn Home lần đầu -> inter -> chuyển đến màn tutorial, các lần sau thi k đến màn tutorial nữa mà đến luôn màn quay"
+    },
+    {
+      "placement": "I_FirstTry_WD_Tutorial",
+      "name": "I_FirstTry_WD_Tutorial",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Khi user click try now ở màn Watch Video Trending lần đầu -> inter -> chuyển đến màn tutorial, các lần sau thi k đến màn tutorial nữa mà đến luôn màn quay"
+    },
+    {
+      "placement": "I_Home_WV_Trending",
+      "name": "I_Home_WV_Trending",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Trong màn home, khi user click vào video trending, chuyển sang màn watch video trending (2 cliecks show 1 ad, delay 1 click)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_TryNow",
+      "name": "I_TryNow",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "- Khi user click vào play now trong màn watch video trending, chuyển sang màn select (2 clicks show 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_Back1",
+      "name": "I_Back1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Click Back ở màn Watch_Video_Trending -> Inter -> Màn trước đó (Home/ TopTrend) (2 clicks show 1 ad) (Khi vừa show inter lúc vào màn Watch Video Trending, khi Back lại sẽ k show nữa)"
+    },
+    {
+      "placement": "I_Back2",
+      "name": "I_Back2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Click Back ở màn Watch_Video_Trending -> Inter -> Màn trước đó (Home/ TopTrend) (2 clicks show 1 ad) (Khi vừa show inter lúc vào màn Watch Video Trending, khi Back lại sẽ k show nữa)"
+    },
+    {
+      "placement": "I_Retry",
+      "name": "I_Retry",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Khi user click Retry, hiện ad Inter, sau đó chuyển đến màn Home - Camera/Default 1 (2 click show 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_TopTrend_WV_Trending",
+      "name": "I_TopTrend_WV_Trending",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "User click vào video trending -> màn Watch video trending (Tần suất 2 lần 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_Galery_Watch_Video",
+      "name": "I_Galery_Watch_Video",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "User click vào video trong Galery -> màn Watch video (2 clicks show 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_Finish",
+      "name": "I_Finish",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Khi user click vào Finish trên màn Share -> màn Home - Trending/Gallery view (2 click show 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_Retry",
+      "name": "I_Retry",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "User click retry ở màn Home-Camera/Congra -> Inter -> Home-Camera/Ready",
+      "start": 1,
+      "frequency": 1
+    },
+    {
+      "placement": "I_PlayNowShop",
+      "name": "I_PlayNowShop",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Khi user click PlayNow trong màn shop -> show ad inter->Màn quay (2 clicks show 1 ad)",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "placement": "I_FirstTry_WVD_Tutorial",
+      "name": "I_FirstTry_WVD_Tutorial",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4150646690",
+        "id_max": ""
+      },
+      "description": "Khi user click try now ở màn Watch Video Trending lần đầu -> inter -> chuyển đến màn tutorial, các lần sau thi k đến màn tutorial nữa mà đến luôn màn quay",
+      "start": 1,
+      "frequency": 1
+    }
+  ],
+  "banners": [
+    {
+      "placement": "C_Result",
+      "name": "C_Result",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/1861710495",
+        "id_max": ""
+      },
+      "description": "",
+      "anchored": "bottom"
+    },
+    {
+      "placement": "C_TopTrend",
+      "name": "C_TopTrend",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/1703612604",
+        "id_max": "5e15f34eada11ef4"
+      },
+      "description": "",
+      "anchored": ""
+    },
+    {
+      "placement": "C_Camera",
+      "name": "C_Camera",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4487873832",
+        "id_max": ""
+      },
+      "description": ""
+    },
+    {
+      "placement": "C_WatchVideoTrending",
+      "name": "C_WatchVideoTrending",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4487873832",
+        "id_max": ""
+      },
+      "description": "",
+      "anchored": "top"
+    },
+    {
+      "placement": "C_Select",
+      "name": "C_Select",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/4487873832",
+        "id_max": ""
+      },
+      "description": "",
+      "anchored": "top"
+    }
+  ],
+  "natives": [
+    {
+      "placement": "N_Language1",
+      "name": "N_Language1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3368048061",
+        "id_max": ""
+      },
+      "description": "Ad Native dưới cùng màn Language (Preload 2 ads)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Language2",
+      "name": "N_Language2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3368048061",
+        "id_max": ""
+      },
+      "description": "Ad Native dưới cùng màn Language (Preload 2 ads)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_OnBoard1",
+      "name": "N_OnBoard1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2244853878",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_OnBoard2",
+      "name": "N_OnBoard2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2244853878",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_OnBoard3",
+      "name": "N_OnBoard3",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2244853878",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Tutorial1",
+      "name": "N_Tutorial1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/5992527191",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Tutorial2",
+      "name": "N_Tutorial2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/5992527191",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Tutorial3",
+      "name": "N_Tutorial3",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/5992527191",
+        "id_max": ""
+      },
+      "description": "",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Select1",
+      "name": "N_Select1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3366363852",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Select2",
+      "name": "N_Select2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3366363852",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Select3",
+      "name": "N_Select3",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3366363852",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Shop1",
+      "name": "N_Shop1",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8269020952",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Shop2",
+      "name": "N_Shop2",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8269020952",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Shop3",
+      "name": "N_Shop3",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8269020952",
+        "id_max": "7b6038f2009224af"
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    },
+    {
+      "placement": "N_Creating",
+      "name": "N_Creating",
+      "status": true,
+      "isAuto": false,
+      "ads_type": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/9211401686",
+        "id_max": ""
+      },
+      "description": "Ad Native dưới cùng màn Select (Preload)",
+      "isPreload": true
+    }
+  ]
+}

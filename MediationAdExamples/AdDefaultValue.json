@@ -1,0 +1,97 @@
+{
+  "status": true,
+  "splashs": [
+    {
+      "placement": "Splash_1",
+      "name": "Splash_1",
+      "status": false,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8295828388",
+        "id_max": "fe6b5edc900ccd81"
+      },
+      "isAuto": false,
+      "description": "",
+      "timeout": 30
+    }
+  ],
+  "appOpens": [
+    {
+      "placement": "App_Open_1",
+      "name": "App_Open_1",
+      "status": true,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/1762209621",
+        "id_max": "fe6b5edc900ccd81"
+      },
+      "isAuto": false,
+      "description": ""
+    }
+  ],
+  "rewardeds": [
+    {
+      "placement": "Rewarded_1",
+      "name": "Rewarded_1",
+      "status": true,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/3861230097",
+        "id_max": "4672eb07438c0f6c"
+      }
+    }
+  ],
+  "rewardedInterstitials": [
+    {
+      "placement": "Rewarded_Interstitial",
+      "name": "Rewarded_Interstitial",
+      "status": true,
+      "network": "admob",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3940256099942544/6978759866"
+      },
+      "description": ""
+    }
+  ],
+  "interstitials": [
+    {
+      "placement": "Interstitial_1",
+      "name": "Interstitial_1",
+      "status": true,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/8295828388",
+        "id_max": "fe6b5edc900ccd81"
+      },
+      "isAuto": true,
+      "description": ""
+    }
+  ],
+  "banners": [
+    {
+      "placement": "Banner_1",
+      "name": "Banner_1",
+      "status": true,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/2883719602",
+        "id_max": "353234ee4e4ee068"
+      },
+      "anchored": "top"
+    }
+  ],
+  "natives": [
+    {
+      "placement": "Native_1",
+      "name": "Native_1",
+      "status": true,
+      "network": "max",
+      "id_ads": {
+        "id_admob": "ca-app-pub-3548016532531500/1243334872",
+        "id_max": "2911f1bf0dd43d73"
+      },
+      "description": "",
+      "isPreload": true
+    }
+  ]
+}
