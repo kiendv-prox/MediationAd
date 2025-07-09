@@ -1,10 +1,3 @@
-//
-//  MediationAd.podspec
-//  MediationAd
-//
-//  Created by Dev_iOS on 9/7/25.
-//
-
 Pod::Spec.new do |s|
     s.name             = 'MediationAd'
     s.version          = '1.0.0'
@@ -14,13 +7,16 @@ Pod::Spec.new do |s|
         including AppLovin MAX (13.3.1), Google AdMob, Meta Audience Network, and Unity Ads.
         It simplifies ad integration using a modular Swift-based structure.
     DESC
-    s.homepage         = 'https://gitlab.com/proxglobal/ios/mediationad'
+    s.homepage         = 'https://github.com/kiendv-prox/MediationAd'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'KienDV' => 'kiendv@proxglobal.com' }
     s.source           = {
-        :git => 'https://gitlab.com/proxglobal/ios/mediationad.git',
+        :git => 'https://github.com/kiendv-prox/MediationAd.git',
         :tag => s.version.to_s
     }
+    
+    s.ios.deployment_target = '13.0'
+    s.static_framework = true
     s.source_files     = 'MediationAd/**/*.{swift,h}'
 
     # Dependency with version pinning
