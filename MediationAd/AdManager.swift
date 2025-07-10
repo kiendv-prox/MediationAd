@@ -94,13 +94,13 @@ public class AdManager {
     print("[MediationAd] [AdManager] Start register!")
     LogEventManager.shared.log(event: .adManagerStartRegister)
     
-#if DEBUG
+//#if DEBUG
 //    decoding(data: remoteData, resource: .remote)
 //    fetchCache()
-#else
+//#else
     decoding(data: remoteData, resource: .remote)
     fetchCache()
-#endif
+//#endif
     fetchDefault()
   }
   

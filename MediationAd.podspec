@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     s.dependency 'AppLovinSDK', '13.3.1'
     s.dependency 'AppLovinMediationGoogleAdapter'
     s.dependency 'AppLovinMediationUnityAdsAdapter'
-    s.dependency 'AppLovinMediationByteDanceAdapter'
+    s.dependency 'AppLovinMediationByteDanceAdapter', '7.4.0.7.0'
     s.dependency 'AppLovinMediationFyberAdapter'
     s.dependency 'AppLovinMediationInMobiAdapter'
     s.dependency 'AppLovinMediationIronSourceAdapter'
