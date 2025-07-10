@@ -51,7 +51,7 @@ public class AppManager: @unchecked Sendable {
     @Published public var adConfigStatus: Bool = false
     @Published public var configStatus: Bool = false
     private lazy var networkConnectSubject = PassthroughSubject<Bool, Never>()
-    private lazy var remoteConfigSubject = PassthroughSubject<Data, Never>()
+    public lazy var remoteConfigSubject = PassthroughSubject<Data, Never>()
     private lazy var timeoutConfigSubject = PassthroughSubject<Bool, Never>()
     private var timeoutTimer: Timer?
     
@@ -101,17 +101,6 @@ public class AppManager: @unchecked Sendable {
 
 private extension AppManager {
     private func addObservers() {
-        remoteConfigSubject.sink { data in
-            print("Data: \(data.count)")
-        }
-        .store(in: &subscriptions)
-        consentManager.consentSubject
-            .sink { state in
-                print("State: \(state)")
-            }
-            .store(in: &subscriptions)
-        
-        
         Publishers.CombineLatest3(releaseManager.releaseSubject,
                                   remoteConfigSubject,
                                   consentManager.consentSubject)

@@ -9,6 +9,17 @@ import UIKit
 import AppLovinSDK
 import AppsFlyerAdRevenue
 
+public enum MaxNativeViewTag: Int {
+    case title = 100
+    case body = 101
+    case callToAction = 102
+    case icon = 103
+    case media = 104
+    case starRating = 105
+    case advertiser = 106
+    case options = 107
+}
+
 class MaxNativeAd: NSObject, OnceUsedAdProtocol {
   enum State {
     case wait
@@ -42,12 +53,12 @@ class MaxNativeAd: NSObject, OnceUsedAdProtocol {
     
     self.nativeAdView = nativeAdView as? MANativeAdView
     let adViewBinder = MANativeAdViewBinder(builderBlock: { builder in
-      builder.titleLabelTag = 100
-      builder.bodyLabelTag = 101
-      builder.callToActionButtonTag = 102
-      builder.iconImageViewTag = 103
-      builder.mediaContentViewTag = 104
-      builder.advertiserLabelTag = 105
+        builder.titleLabelTag = MaxNativeViewTag.title.rawValue
+        builder.bodyLabelTag = MaxNativeViewTag.body.rawValue
+        builder.callToActionButtonTag = MaxNativeViewTag.callToAction.rawValue
+        builder.iconImageViewTag = MaxNativeViewTag.icon.rawValue
+        builder.mediaContentViewTag = MaxNativeViewTag.media.rawValue
+        builder.advertiserLabelTag = MaxNativeViewTag.advertiser.rawValue
     })
     self.nativeAdView?.bindViews(with: adViewBinder)
     self.load()
