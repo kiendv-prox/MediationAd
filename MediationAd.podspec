@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
     s.dependency 'AppLovinMediationMintegralAdapter'
     s.dependency 'AppLovinMediationFacebookAdapter'
     s.dependency 'AppLovinMediationYandexAdapter'
-    s.dependency 'FirebaseMessaging', '11.15.0'
     s.dependency 'FirebaseRemoteConfig', '11.15.0'
     s.dependency 'FirebaseABTesting', '11.15.0'
     s.dependency 'FirebaseAnalytics', '11.15.0'
