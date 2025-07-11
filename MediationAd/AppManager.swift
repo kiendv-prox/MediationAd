@@ -7,14 +7,6 @@
 
 import Foundation
 import Combine
-
-#if canImport(FirebaseCore)
-import FirebaseCore
-#endif
-
-#if canImport(FirebaseRemoteConfig)
-import FirebaseRemoteConfig
-#endif
 import GoogleMobileAds
 import AppLovinSDK
 import FBAudienceNetwork
@@ -51,7 +43,6 @@ public class AppManager: @unchecked Sendable {
     
     private lazy var releaseManager = ReleaseManager.shared
     private let networkManager = NetworkManager.shared
-    private var remoteManager: RemoteManager!
     private lazy var consentManager = ConsentManager.shared
     
     @Published public var adConfigStatus: Bool = false
@@ -71,7 +62,6 @@ public class AppManager: @unchecked Sendable {
         print("[MediationAd] [AppManager] Start config!")
         LogEventManager.shared.log(event: .appManagerStartConfig)
         
-        initSdkConfigture()
         addObservers()
         registerTimeout()
     }
@@ -134,6 +124,11 @@ private extension AppManager {
                 releaseTimeout()
             }).store(in: &subscriptions)
         
+        remoteConfigSubject
+            .sink { [weak self] data in
+                guard let self else { return }
+                consentManager.update(consentData: data)
+            }.store(in: &subscriptions)
         
         networkManager.$isNetwordConnected
             .sink(receiveValue: { [weak self] isConnected in
@@ -142,10 +137,6 @@ private extension AppManager {
                 guard isConnected, state == .loading else { return }
                 
                 state = .success
-                
-                if remoteManager != nil {
-                    remoteManager.initialize()
-                }
                 
                 initilizedBeforeNetworkConnected()
                 consentManager.initialize(maxSdkKey: appConfig.maxSdkKey, trackingManager: TrackingManager.shared)
@@ -166,27 +157,23 @@ private extension AppManager {
     private func initilizedBeforeNetworkConnected() {
         guard !didConnectedConfigure else { return }
         didConnectedConfigure = true
-        
-        remoteManager = RemoteManager.shared
-        remoteManager.initialize()
+//
+//        remoteManager = RemoteManager.shared
+//        remoteManager.initialize()
         releaseManager.initialize(appID: appConfig.appID,
                                   keyID: appConfig.keyID,
                                   issuerID: appConfig.issuerID,
                                   privateKey: appConfig.privateKey)
         consentManager.initialize(maxSdkKey: appConfig.maxSdkKey, trackingManager: TrackingManager.shared)
         
-        remoteManager.remoteSubject.sink { [weak self] state in
-            guard let self else { return }
-            guard state == .success else {return}
-            let data = remoteManager.remoteConfig.configValue(forKey: appConfig.adConfigKey).dataValue
-            remoteConfigSubject.send(data)
-            consentManager.update(consentData: data)
-        }.store(in: &subscriptions)
+//        remoteManager.remoteSubject.sink { [weak self] state in
+//            guard let self else { return }
+//            guard state == .success else {return}
+//            let data = remoteManager.remoteConfig.configValue(forKey: appConfig.adConfigKey).dataValue
+//            remoteConfigSubject.send(data)
+//            consentManager.update(consentData: data)
+//        }.store(in: &subscriptions)
         
-    }
-    
-    private func initSdkConfigture() {
-        FirebaseApp.configure()
     }
 }
 

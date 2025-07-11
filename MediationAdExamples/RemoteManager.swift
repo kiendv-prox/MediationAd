@@ -7,9 +7,7 @@
 
 import Foundation
 import Combine
-#if canImport(FirebaseCore)
 import FirebaseRemoteConfig
-#endif
 
 public class RemoteManager: @unchecked Sendable {
   public static let shared = RemoteManager()
@@ -22,13 +20,13 @@ public class RemoteManager: @unchecked Sendable {
   }
   
   @Published public private(set) var remoteState: State = .wait
-  let remoteSubject = PassthroughSubject<State, Never>()
-  let remoteConfig = RemoteConfig.remoteConfig()
+    public let remoteSubject = PassthroughSubject<State, Never>()
+    public lazy var remoteConfig = RemoteConfig.remoteConfig()
   private let remoteTimeout = 15.0
 }
 
 extension RemoteManager {
-  func initialize() {
+    public func initialize() {
     fetchRemote()
   }
 }

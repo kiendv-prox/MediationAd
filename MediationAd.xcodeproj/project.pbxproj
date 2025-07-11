@@ -32,7 +32,6 @@
 		963703062C5C993E005B52CA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963703052C5C993E005B52CA /* APIError.swift */; };
 		963703082C5C9953005B52CA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963703072C5C9953005B52CA /* APIService.swift */; };
 		9637030A2C5C996A005B52CA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963703092C5C996A005B52CA /* EndPoint.swift */; };
-		9637030D2C5C99BC005B52CA /* RemoteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637030C2C5C99BC005B52CA /* RemoteHandler.swift */; };
 		9637030F2C5C99E7005B52CA /* ConsentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637030E2C5C99E7005B52CA /* ConsentHandler.swift */; };
 		963703112C5C99FB005B52CA /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963703102C5C99FB005B52CA /* Handler.swift */; };
 		963703142C5C9A56005B52CA /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963703132C5C9A56005B52CA /* UIApplicationExtension.swift */; };
@@ -210,7 +209,6 @@
 		963703052C5C993E005B52CA /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		963703072C5C9953005B52CA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		963703092C5C996A005B52CA /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
-		9637030C2C5C99BC005B52CA /* RemoteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteHandler.swift; sourceTree = "<group>"; };
 		9637030E2C5C99E7005B52CA /* ConsentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentHandler.swift; sourceTree = "<group>"; };
 		963703102C5C99FB005B52CA /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		963703132C5C9A56005B52CA /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
@@ -342,13 +340,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D4E93B12E1B7F950069F289 /* MediationAdViews */ = {
+		1D5A3CF52E20EE0D004662F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9661727E2C5F7A060007C760 /* AdMobSplashAd.swift */,
+				966172822C5F7A070007C760 /* AdMobInterstitialAd.swift */,
+				966172832C5F7A070007C760 /* AdMobAppOpenAd.swift */,
+				966172812C5F7A070007C760 /* AdMobRewardedAd.swift */,
+				966172802C5F7A060007C760 /* AdMobRewardedInterstitialAd.swift */,
+				9661727F2C5F7A060007C760 /* AdMobNativeAd.swift */,
+				966172E02C62263D0007C760 /* MaxSplashAd.swift */,
+				966172DE2C621F940007C760 /* MaxInterstitialAd.swift */,
+				966172D42C61DE6F0007C760 /* MaxAppOpenAd.swift */,
+				966172E22C6229AC0007C760 /* MaxRewardedAd.swift */,
+				966172F62C6353D90007C760 /* MaxNativeAd.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D5A3CF62E20EE32004662F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				1D4E93B22E1B806B0069F289 /* MediationBannerView.swift */,
 				1D59BBDF2E1D7D6700A0ACF2 /* MediationNativeView.swift */,
+				966172E52C6242170007C760 /* MaxBannerAdView.swift */,
+				966172F42C6353470007C760 /* MaxNativeAdView.swift */,
+				9661728B2C5F7A2D0007C760 /* AdMobBannerAdView.swift */,
+				9661728C2C5F7A2D0007C760 /* AdMobNativeAdView.swift */,
 			);
-			path = MediationAdViews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1DF1FAF72E053A9900593EC2 /* AppConfig */ = {
@@ -383,6 +403,7 @@
 		963702DF2C5C8B38005B52CA /* MediationAd */ = {
 			isa = PBXGroup;
 			children = (
+				9661727A2C5F79AA0007C760 /* Ads */,
 				9637030B2C5C9989005B52CA /* Base */,
 				963703122C5C9A42005B52CA /* Extensions */,
 				966172562C5F778B0007C760 /* Ultis */,
@@ -398,7 +419,6 @@
 			isa = PBXGroup;
 			children = (
 				963703002C5C9061005B52CA /* AppManager.swift */,
-				9637032C2C5C9B66005B52CA /* RemoteManager.swift */,
 				9637032A2C5C9B4D005B52CA /* ReleaseManager.swift */,
 				963703022C5C9916005B52CA /* ConsentManager.swift */,
 				963703282C5C9B13005B52CA /* TrackingManager.swift */,
@@ -424,7 +444,6 @@
 				966172A22C608BB50007C760 /* OnceUsedAdProtocol.swift */,
 				966172522C5F775F0007C760 /* ReuseAdProtocol.swift */,
 				963703102C5C99FB005B52CA /* Handler.swift */,
-				9637030C2C5C99BC005B52CA /* RemoteHandler.swift */,
 				9637030E2C5C99E7005B52CA /* ConsentHandler.swift */,
 			);
 			name = Base;
@@ -512,50 +531,17 @@
 				9600A45F2C6B3D1F00D7D5EB /* NetworkManager.swift */,
 				9600A4682C74A13600D7D5EB /* TimeManager.swift */,
 				963703262C5C9AF4005B52CA /* LogEventManager.swift */,
-				9661727A2C5F79AA0007C760 /* Ad */,
 			);
 			name = Supports;
 			sourceTree = "<group>";
 		};
-		9661727A2C5F79AA0007C760 /* Ad */ = {
+		9661727A2C5F79AA0007C760 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
-				1D4E93B12E1B7F950069F289 /* MediationAdViews */,
-				9661727B2C5F79BB0007C760 /* AdMob */,
-				966172D12C61D8C70007C760 /* Max */,
-			);
-			path = Ad;
-			sourceTree = "<group>";
-		};
-		9661727B2C5F79BB0007C760 /* AdMob */ = {
-			isa = PBXGroup;
-			children = (
-				9661727C2C5F79C20007C760 /* Ads */,
-				9661728A2C5F7A0C0007C760 /* AdView */,
-			);
-			name = AdMob;
-			sourceTree = "<group>";
-		};
-		9661727C2C5F79C20007C760 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				9661727E2C5F7A060007C760 /* AdMobSplashAd.swift */,
-				966172822C5F7A070007C760 /* AdMobInterstitialAd.swift */,
-				966172832C5F7A070007C760 /* AdMobAppOpenAd.swift */,
-				966172812C5F7A070007C760 /* AdMobRewardedAd.swift */,
-				966172802C5F7A060007C760 /* AdMobRewardedInterstitialAd.swift */,
-				9661727F2C5F7A060007C760 /* AdMobNativeAd.swift */,
+				1D5A3CF62E20EE32004662F8 /* Views */,
+				1D5A3CF52E20EE0D004662F8 /* Models */,
 			);
 			path = Ads;
-			sourceTree = "<group>";
-		};
-		9661728A2C5F7A0C0007C760 /* AdView */ = {
-			isa = PBXGroup;
-			children = (
-				9661728B2C5F7A2D0007C760 /* AdMobBannerAdView.swift */,
-				9661728C2C5F7A2D0007C760 /* AdMobNativeAdView.swift */,
-			);
-			name = AdView;
 			sourceTree = "<group>";
 		};
 		966172A42C60B5C80007C760 /* Extensions */ = {
@@ -657,36 +643,6 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
-		966172D12C61D8C70007C760 /* Max */ = {
-			isa = PBXGroup;
-			children = (
-				966172D22C61D8D30007C760 /* Ads */,
-				966172D32C61D8DD0007C760 /* AdView */,
-			);
-			path = Max;
-			sourceTree = "<group>";
-		};
-		966172D22C61D8D30007C760 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				966172E02C62263D0007C760 /* MaxSplashAd.swift */,
-				966172DE2C621F940007C760 /* MaxInterstitialAd.swift */,
-				966172D42C61DE6F0007C760 /* MaxAppOpenAd.swift */,
-				966172E22C6229AC0007C760 /* MaxRewardedAd.swift */,
-				966172F62C6353D90007C760 /* MaxNativeAd.swift */,
-			);
-			name = Ads;
-			sourceTree = "<group>";
-		};
-		966172D32C61D8DD0007C760 /* AdView */ = {
-			isa = PBXGroup;
-			children = (
-				966172E52C6242170007C760 /* MaxBannerAdView.swift */,
-				966172F42C6353470007C760 /* MaxNativeAdView.swift */,
-			);
-			path = AdView;
-			sourceTree = "<group>";
-		};
 		966172F92C6367D50007C760 /* MediationBanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +673,7 @@
 		966313D52C5CD5E200D69BBA /* MediationAdExamples */ = {
 			isa = PBXGroup;
 			children = (
+				9637032C2C5C9B66005B52CA /* RemoteManager.swift */,
 				1D59AB8E2E1D310E00A0ACF2 /* DefaultValue.json */,
 				966715432C9ABDF90076CF07 /* PrivacyInfo.xcprivacy */,
 				9622EC012C97E5F400B81D9A /* GoogleService-Info.plist */,
@@ -998,7 +955,6 @@
 				963703292C5C9B13005B52CA /* TrackingManager.swift in Sources */,
 				966172882C5F7A070007C760 /* AdMobInterstitialAd.swift in Sources */,
 				9661728D2C5F7A2D0007C760 /* AdMobBannerAdView.swift in Sources */,
-				9637030D2C5C99BC005B52CA /* RemoteHandler.swift in Sources */,
 				9661729F2C607F100007C760 /* MonetizationNetwork.swift in Sources */,
 				966172872C5F7A070007C760 /* AdMobRewardedAd.swift in Sources */,
 				966172892C5F7A070007C760 /* AdMobAppOpenAd.swift in Sources */,

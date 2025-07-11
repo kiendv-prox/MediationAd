@@ -19,15 +19,16 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-mU-fIn">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g1M-G9-QvK">
-                    <rect key="frame" x="0.0" y="68" width="393" height="750"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAK-gJ-WXP" customClass="MediationNativeView" customModule="MediationAd">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="750"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="750" id="3b8-oE-Rnp"/>
-                            </constraints>
                         </view>
                     </subviews>
                 </stackView>
@@ -43,11 +44,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="gwR-mU-fIn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3YW-vq-hqL"/>
                 <constraint firstItem="g1M-G9-QvK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="85i-Xm-BSq"/>
-                <constraint firstItem="g1M-G9-QvK" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Hpo-HS-6Zh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gwR-mU-fIn" secondAttribute="trailing" id="DW9-xT-luU"/>
                 <constraint firstItem="uJ8-1a-fG6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IHC-as-PoG"/>
+                <constraint firstItem="g1M-G9-QvK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Mza-dN-eLj"/>
                 <constraint firstItem="uJ8-1a-fG6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Pvc-CH-ooS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gwR-mU-fIn" secondAttribute="bottom" id="eL8-Hg-md1"/>
                 <constraint firstItem="g1M-G9-QvK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hBj-Io-ygu"/>
+                <constraint firstItem="aAK-gJ-WXP" firstAttribute="height" secondItem="gwR-mU-fIn" secondAttribute="height" id="tG2-Ds-v03"/>
+                <constraint firstItem="gwR-mU-fIn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yhf-h3-l3a"/>
             </constraints>
             <point key="canvasLocation" x="138" y="21"/>
         </view>

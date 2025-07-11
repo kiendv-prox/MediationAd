@@ -7,12 +7,18 @@
 
 import UIKit
 import MediationAd
+import FirebaseAnalytics
+import FirebaseCore
+import Combine
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
+    private lazy var remoteManager = RemoteManager.shared
+    private lazy var subscriptions = Set<AnyCancellable>()
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     let appID = "6473620562"
     let devKey = "PdFSXQuoCZKy2mQvtsMXsW"
     let issuerID = "90feb1ef-b49e-466f-bdf0-6c854e6042e2"
@@ -36,12 +42,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    AppManager.shared.activeDebug(.event)
 //    AppManager.shared.activeDebug(.consent(true))
     
+      FirebaseApp.configure()
+      
     if let url = Bundle.main.url(forResource: "AdDefaultValue", withExtension: "json"),
        let defaultData = try? Data(contentsOf: url) {
         let config = AppConfig(appID: appID, issuerID: issuerID, keyID: keyID, privateKey: privateKey, adConfigKey: adConfigKey, defaultData: defaultData, maxSdkKey: maxSdkKey, devKey: devKey, trackingTimeout: 20)
         
         AppManager.shared.initialize(app: config)
     }
+      
+      TrackingManager.shared
+          .statusSubject
+          .sink { status in
+              Analytics.setAnalyticsCollectionEnabled(status)
+          }.store(in: &subscriptions)
+      
+      remoteManager.$remoteState
+          .filter({ $0 == .success })
+          .map({ _ in self.remoteManager.remoteConfig.configValue(forKey: adConfigKey).dataValue })
+          .sink { [weak self] data in
+              guard self != nil else { return }
+              AppManager.shared.remoteConfigSubject.send(data)
+          }.store(in: &subscriptions)
+      
+      NetworkManager.shared
+          .$isNetwordConnected
+          .filter({ $0 })
+          .sink { [weak self] _ in
+              self?.remoteManager.initialize()
+          }.store(in: &subscriptions)
     return true
   }
 }

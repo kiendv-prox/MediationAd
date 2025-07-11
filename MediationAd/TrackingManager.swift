@@ -8,16 +8,15 @@
 import Foundation
 import AppTrackingTransparency
 import AppsFlyerLib
-#if canImport(FirebaseAnalytics)
-import FirebaseAnalytics
-#endif
 import AdSupport
 import PurchaseConnector
 import StoreKit
 import AppsFlyerAdRevenue
+import Combine
 
 public class TrackingManager: NSObject {
     public static let shared = TrackingManager()
+    public let statusSubject = CurrentValueSubject<Bool, Never>(false)
     
     public func debug(enable: Bool) {
         AppsFlyerLib.shared().isDebug = enable
@@ -61,11 +60,11 @@ public class TrackingManager: NSObject {
                 case .authorized:
                     print("[MediationAd] [TrackingManager] Enable!")
                     print("[MediationAd] [TrackingManager] \(ASIdentifierManager.shared().advertisingIdentifier)")
-                    Analytics.setAnalyticsCollectionEnabled(true)
+                    self.statusSubject.send(true)
                     LogEventManager.shared.log(event: .trackingManagerAgree)
                 default:
                     print("[MediationAd] [TrackingManager] Disable!")
-                    Analytics.setAnalyticsCollectionEnabled(false)
+                    self.statusSubject.send(false)
                     LogEventManager.shared.log(event: .trackingManagerReject)
                 }
                 continuation.resume(returning: status == .authorized)
@@ -97,7 +96,7 @@ extension TrackingManager {
         
         if #available(iOS 14, *),
            ATTrackingManager.trackingAuthorizationStatus == .authorized {
-            Analytics.setAnalyticsCollectionEnabled(true)
+            statusSubject.send(true)
         }
     }
 }
