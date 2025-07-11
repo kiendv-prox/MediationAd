@@ -18,6 +18,10 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '13.0'
     s.static_framework = true
     s.source_files     = 'MediationAd/**/*.{swift,h}'
+    
+    s.pod_target_xcconfig = {
+        'OTHER_LDFLAGS' => '-ObjC'
+    }
 
     # Dependency with version pinning
     s.dependency 'AppLovinSDK', '13.3.1'
