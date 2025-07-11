@@ -8,7 +8,9 @@
 import Foundation
 import AppTrackingTransparency
 import AppsFlyerLib
+#if canImport(FirebaseAnalytics)
 import FirebaseAnalytics
+#endif
 import AdSupport
 import PurchaseConnector
 import StoreKit

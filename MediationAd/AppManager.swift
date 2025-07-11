@@ -7,8 +7,14 @@
 
 import Foundation
 import Combine
+
+#if canImport(FirebaseCore)
 import FirebaseCore
+#endif
+
+#if canImport(FirebaseRemoteConfig)
 import FirebaseRemoteConfig
+#endif
 import GoogleMobileAds
 import AppLovinSDK
 import FBAudienceNetwork

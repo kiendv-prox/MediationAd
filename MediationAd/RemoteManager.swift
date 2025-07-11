@@ -7,7 +7,9 @@
 
 import Foundation
 import Combine
+#if canImport(FirebaseCore)
 import FirebaseRemoteConfig
+#endif
 
 public class RemoteManager: @unchecked Sendable {
   public static let shared = RemoteManager()

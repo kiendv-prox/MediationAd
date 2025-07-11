@@ -18,10 +18,9 @@ class HomeViewController: BaseViewController {
   
   override func binding() {
     ConsentManager.shared.$consentState
+      .receive(on: DispatchQueue.main)
       .sink { [weak self] consentState in
-        guard let self else {
-          return
-        }
+        guard let self else { return }
         updateConsentButton.isHidden = consentState != .reject
       }.store(in: &subscriptions)
   }

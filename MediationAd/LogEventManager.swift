@@ -6,7 +6,10 @@
 //
 
 import Foundation
+
+#if canImport(FirebaseAnalytics)
 import FirebaseAnalytics
+#endif
 
 class LogEventManager: @unchecked Sendable {
     static let shared = LogEventManager()
