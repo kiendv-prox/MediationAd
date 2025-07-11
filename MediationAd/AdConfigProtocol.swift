@@ -12,14 +12,14 @@ protocol AdConfigProtocol: Codable {
     var status: Bool { get }
     var name: String { get }
     var isAuto: Bool? { get }
-    var network: MonetizationNetwork { get }
+    var ads_type: MonetizationNetwork { get }
     var id_ads: AdIds? { get }
     var description: String? { get }
 }
 
 extension AdConfigProtocol {
     func getAdId() -> String? {
-        switch network {
+        switch ads_type {
         case .admob: return id_ads?.idAdmob
         case .max: return id_ads?.idMax
         }

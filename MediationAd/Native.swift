@@ -11,7 +11,7 @@ struct Native: AdConfigProtocol {
   let placement: String
   let status: Bool
   let name: String
-  let network: MonetizationNetwork
+  let ads_type: MonetizationNetwork
   let id_ads: AdIds?
   let isAuto: Bool?
   let description: String?

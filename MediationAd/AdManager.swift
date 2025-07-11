@@ -94,13 +94,11 @@ public class AdManager {
     print("[MediationAd] [AdManager] Start register!")
     LogEventManager.shared.log(event: .adManagerStartRegister)
     
-//#if DEBUG
-//    decoding(data: remoteData, resource: .remote)
-//    fetchCache()
-//#else
+#if DEBUG
+#else
     decoding(data: remoteData, resource: .remote)
     fetchCache()
-//#endif
+#endif
     fetchDefault()
   }
   
@@ -135,7 +133,7 @@ public class AdManager {
       print("[MediationAd] [AdManager] Ads don't exist! (\(placement))")
       return nil
     }
-    return adConfig.network
+    return adConfig.ads_type
   }
   
   public func load(type: Reuse,
@@ -174,7 +172,7 @@ public class AdManager {
     
     let adProtocol: ReuseAdProtocol!
     
-    switch adConfig.network {
+    switch adConfig.ads_type {
     case .admob:
       switch type {
       case .splash:
@@ -285,7 +283,7 @@ public class AdManager {
     }
     let nativeAd: OnceUsedAdProtocol!
     
-    switch native.network {
+    switch native.ads_type {
     case .admob:
       nativeAd = AdMobNativeAd()
     case .max:
@@ -325,7 +323,7 @@ public class AdManager {
       didFail?()
       return
     }
-    LogEventManager.shared.log(event: .adShowCheck(adConfig.network, adConfig.placement))
+    LogEventManager.shared.log(event: .adShowCheck(adConfig.ads_type, adConfig.placement))
     guard let ad = listReuseAd[adConfig.name] else {
       print("[MediationAd] [AdManager] Ads do not exist! (\(placement))")
       didFail?()
