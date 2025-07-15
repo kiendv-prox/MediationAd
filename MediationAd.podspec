@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     # Dependency with version pinning
     s.dependency 'AppLovinSDK', '13.3.1'
     
-    # Dependency suppport AppLovin Adapter
+    # Dependency Suppport AppLovin Adapter
     s.dependency 'FBAudienceNetwork'
     s.dependency 'Ads-Global'
     s.dependency 'Fyber_Marketplace_SDK'
@@ -37,7 +37,38 @@ Pod::Spec.new do |s|
     s.dependency 'MintegralAdSDK/BidSplashAd'
     s.dependency 'UnityAds'
     s.dependency 'VungleAds'
-    s.dependency 'YandexMobileAds'
+    
+    #Dependency Support AppLovinMediationYandexAdapter
+    s.dependency AppMetricaAdSupport
+    s.dependency AppMetricaCore
+    s.dependency AppMetricaCoreExtension
+    s.dependency AppMetricaCoreUtils
+    s.dependency AppMetricaCrashes
+    s.dependency AppMetricaEncodingUtils
+    s.dependency AppMetricaFMDB
+    s.dependency AppMetricaHostState
+    s.dependency AppMetricaIdentifiers
+    s.dependency AppMetricaKeychain
+    s.dependency AppMetricaLibraryAdapter
+    s.dependency AppMetricaLog
+    s.dependency AppMetricaLogSwift
+    s.dependency AppMetricaNetwork
+    s.dependency AppMetricaPlatform
+    s.dependency AppMetricaProtobuf
+    s.dependency AppMetricaProtobufUtils
+    s.dependency AppMetricaStorageUtils
+    s.dependency AppMetricaSynchronization
+    s.dependency AppsFlyer-AdRevenue
+    s.dependency AppsFlyerFramework
+    s.dependency BlueCryptor
+    s.dependency BlueECC
+    s.dependency BlueRSA
+    s.dependency DivKit
+    s.dependency DivKitBinaryCompatibilityFacade
+    s.dependency DivKit_LayoutKit
+    s.dependency DivKit_LayoutKitInterface
+    s.dependency DivKit_Serialization
+    s.dependency FBAudienceNetwork
     
     # Dependency AppLovin Adapter
     s.dependency 'AppLovinMediationGoogleAdapter'
