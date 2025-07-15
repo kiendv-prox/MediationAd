@@ -25,6 +25,21 @@ Pod::Spec.new do |s|
 
     # Dependency with version pinning
     s.dependency 'AppLovinSDK', '13.3.1'
+    
+    # Dependency suppport AppLovin Adapter
+    s.dependency 'FBAudienceNetwork'
+    s.dependency 'Ads-Global'
+    s.dependency 'Fyber_Marketplace_SDK'
+    s.dependency 'Google-Mobile-Ads-SDK', '12.7.0'
+    s.dependency 'InMobiSDK'
+    s.dependency 'IronSourceSDK'
+    s.dependency 'MintegralAdSDK'
+    s.dependency 'MintegralAdSDK/BidSplashAd'
+    s.dependency 'UnityAds'
+    s.dependency 'VungleAds'
+    s.dependency 'YandexMobileAds'
+    
+    # Dependency AppLovin Adapter
     s.dependency 'AppLovinMediationGoogleAdapter'
     s.dependency 'AppLovinMediationUnityAdsAdapter'
     s.dependency 'AppLovinMediationByteDanceAdapter'
@@ -53,6 +68,5 @@ Pod::Spec.new do |s|
     s.dependency 'AppsFlyerFramework', '6.14.3'
     s.dependency 'PurchaseConnector', '6.14.3'
     s.dependency 'SwiftJWT', '3.6.200'
-    s.dependency 'FBAudienceNetwork'
 
 end
