@@ -58,8 +58,6 @@ Pod::Spec.new do |s|
     s.dependency AppMetricaProtobufUtils
     s.dependency AppMetricaStorageUtils
     s.dependency AppMetricaSynchronization
-    s.dependency AppsFlyer-AdRevenue
-    s.dependency AppsFlyerFramework
     s.dependency BlueCryptor
     s.dependency BlueECC
     s.dependency BlueRSA
