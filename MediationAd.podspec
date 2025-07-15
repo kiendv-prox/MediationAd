@@ -39,33 +39,33 @@ Pod::Spec.new do |s|
     s.dependency 'VungleAds'
     
     #Dependency Support AppLovinMediationYandexAdapter
-    s.dependency AppMetricaAdSupport
-    s.dependency AppMetricaCore
-    s.dependency AppMetricaCoreExtension
-    s.dependency AppMetricaCoreUtils
-    s.dependency AppMetricaCrashes
-    s.dependency AppMetricaEncodingUtils
-    s.dependency AppMetricaFMDB
-    s.dependency AppMetricaHostState
-    s.dependency AppMetricaIdentifiers
-    s.dependency AppMetricaKeychain
-    s.dependency AppMetricaLibraryAdapter
-    s.dependency AppMetricaLog
-    s.dependency AppMetricaLogSwift
-    s.dependency AppMetricaNetwork
-    s.dependency AppMetricaPlatform
-    s.dependency AppMetricaProtobuf
-    s.dependency AppMetricaProtobufUtils
-    s.dependency AppMetricaStorageUtils
-    s.dependency AppMetricaSynchronization
-    s.dependency BlueCryptor
-    s.dependency BlueECC
-    s.dependency BlueRSA
-    s.dependency DivKit
-    s.dependency DivKitBinaryCompatibilityFacade
-    s.dependency DivKit_LayoutKit
-    s.dependency DivKit_LayoutKitInterface
-    s.dependency DivKit_Serialization
+    s.dependency 'AppMetricaAdSupport'
+    s.dependency 'AppMetricaCore'
+    s.dependency 'AppMetricaCoreExtension'
+    s.dependency 'AppMetricaCoreUtils'
+    s.dependency 'AppMetricaCrashes'
+    s.dependency 'AppMetricaEncodingUtils'
+    s.dependency 'AppMetricaFMDB'
+    s.dependency 'AppMetricaHostState'
+    s.dependency 'AppMetricaIdentifiers'
+    s.dependency 'AppMetricaKeychain'
+    s.dependency 'AppMetricaLibraryAdapter'
+    s.dependency 'AppMetricaLog'
+    s.dependency 'AppMetricaLogSwift'
+    s.dependency 'AppMetricaNetwork'
+    s.dependency 'AppMetricaPlatform'
+    s.dependency 'AppMetricaProtobuf'
+    s.dependency 'AppMetricaProtobufUtils'
+    s.dependency 'AppMetricaStorageUtils'
+    s.dependency 'AppMetricaSynchronization'
+    s.dependency 'BlueCryptor'
+    s.dependency 'BlueECC'
+    s.dependency 'BlueRSA'
+    s.dependency 'DivKit'
+    s.dependency 'DivKitBinaryCompatibilityFacade'
+    s.dependency 'DivKit_LayoutKit'
+    s.dependency 'DivKit_LayoutKitInterface'
+    s.dependency 'DivKit_Serialization'
     
     # Dependency AppLovin Adapter
     s.dependency 'AppLovinMediationGoogleAdapter'
