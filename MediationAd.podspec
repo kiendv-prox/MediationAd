@@ -66,7 +66,6 @@ Pod::Spec.new do |s|
     s.dependency DivKit_LayoutKit
     s.dependency DivKit_LayoutKitInterface
     s.dependency DivKit_Serialization
-    s.dependency FBAudienceNetwork
     
     # Dependency AppLovin Adapter
     s.dependency 'AppLovinMediationGoogleAdapter'
