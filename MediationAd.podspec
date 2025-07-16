@@ -90,17 +90,17 @@ Pod::Spec.new do |s|
 #    s.dependency 'GoogleMobileAdsMediationMintegral'
 #    s.dependency 'GoogleMobileAdsMediationPangle'
 
-    s.dependency 'GoogleUtilities'
-    s.dependency 'FirebaseCore', '11.15.0'
-    s.dependency 'FirebaseRemoteConfig', '11.15.0'
-    s.dependency 'FirebaseABTesting', '11.15.0'
-    s.dependency 'FirebaseAnalytics', '11.15.0'
-    s.dependency 'FirebaseCrashlytics', '11.15.0'
-    s.dependency 'FirebaseMessaging', '11.15.0'
+#    s.dependency 'GoogleUtilities'
+#    s.dependency 'FirebaseCore', '11.15.0'
+#    s.dependency 'FirebaseRemoteConfig', '11.15.0'
+#    s.dependency 'FirebaseABTesting', '11.15.0'
+#    s.dependency 'FirebaseAnalytics', '11.15.0'
+#    s.dependency 'FirebaseCrashlytics', '11.15.0'
+#    s.dependency 'FirebaseMessaging', '11.15.0'
     
-    s.dependency 'AppsFlyer-AdRevenue', '6.14.3'
-    s.dependency 'AppsFlyerFramework', '6.14.3'
-    s.dependency 'PurchaseConnector', '6.14.3'
-    s.dependency 'SwiftJWT', '3.6.200'
+#    s.dependency 'AppsFlyer-AdRevenue', '6.14.3'
+#    s.dependency 'AppsFlyerFramework', '6.14.3'
+#    s.dependency 'PurchaseConnector', '6.14.3'
+#    s.dependency 'SwiftJWT', '3.6.200'
 
 end
