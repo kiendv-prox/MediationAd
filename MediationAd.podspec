@@ -29,6 +29,18 @@ Pod::Spec.new do |s|
 
     # Dependency with version pinning
     s.dependency 'AppLovinSDK', '13.3.1'
+        
+    # Dependency AppLovin Adapter
+    s.dependency 'AppLovinMediationGoogleAdapter'
+    s.dependency 'AppLovinMediationUnityAdsAdapter'
+    s.dependency 'AppLovinMediationByteDanceAdapter'
+    s.dependency 'AppLovinMediationFyberAdapter'
+    s.dependency 'AppLovinMediationInMobiAdapter'
+    s.dependency 'AppLovinMediationIronSourceAdapter'
+    s.dependency 'AppLovinMediationVungleAdapter'
+    s.dependency 'AppLovinMediationMintegralAdapter'
+    s.dependency 'AppLovinMediationFacebookAdapter'
+    s.dependency 'AppLovinMediationYandexAdapter'
     
     # Dependency Suppport AppLovin Adapter
 #   s.dependency 'FBAudienceNetwork'
@@ -70,18 +82,6 @@ Pod::Spec.new do |s|
 #    s.dependency 'DivKit_LayoutKit'
 #    s.dependency 'DivKit_LayoutKitInterface'
 #    s.dependency 'DivKit_Serialization'
-    
-    # Dependency AppLovin Adapter
-    s.dependency 'AppLovinMediationGoogleAdapter'
-    s.dependency 'AppLovinMediationUnityAdsAdapter'
-    s.dependency 'AppLovinMediationByteDanceAdapter'
-    s.dependency 'AppLovinMediationFyberAdapter'
-    s.dependency 'AppLovinMediationInMobiAdapter'
-    s.dependency 'AppLovinMediationIronSourceAdapter'
-    s.dependency 'AppLovinMediationVungleAdapter'
-    s.dependency 'AppLovinMediationMintegralAdapter'
-    s.dependency 'AppLovinMediationFacebookAdapter'
-    s.dependency 'AppLovinMediationYandexAdapter'
     
 #    s.dependency 'Google-Mobile-Ads-SDK', '12.7.0'
 #    s.dependency 'GoogleMobileAdsMediationAppLovin'
