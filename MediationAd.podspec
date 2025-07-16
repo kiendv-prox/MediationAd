@@ -29,19 +29,19 @@ Pod::Spec.new do |s|
     }
 
     # Dependency with version pinning
-    s.dependency 'AppLovinSDK', '13.3.1'
+#    s.dependency 'AppLovinSDK', '13.3.1'
         
     # Dependency AppLovin Adapter
-    s.dependency 'AppLovinMediationGoogleAdapter'
-    s.dependency 'AppLovinMediationUnityAdsAdapter'
-    s.dependency 'AppLovinMediationByteDanceAdapter'
-    s.dependency 'AppLovinMediationFyberAdapter'
-    s.dependency 'AppLovinMediationInMobiAdapter'
-    s.dependency 'AppLovinMediationIronSourceAdapter'
-    s.dependency 'AppLovinMediationVungleAdapter'
-    s.dependency 'AppLovinMediationMintegralAdapter'
-    s.dependency 'AppLovinMediationFacebookAdapter'
-    s.dependency 'AppLovinMediationYandexAdapter'
+#    s.dependency 'AppLovinMediationGoogleAdapter'
+#    s.dependency 'AppLovinMediationUnityAdsAdapter'
+#    s.dependency 'AppLovinMediationByteDanceAdapter'
+#    s.dependency 'AppLovinMediationFyberAdapter'
+#    s.dependency 'AppLovinMediationInMobiAdapter'
+#    s.dependency 'AppLovinMediationIronSourceAdapter'
+#    s.dependency 'AppLovinMediationVungleAdapter'
+#    s.dependency 'AppLovinMediationMintegralAdapter'
+#    s.dependency 'AppLovinMediationFacebookAdapter'
+#    s.dependency 'AppLovinMediationYandexAdapter'
     
     # Dependency Suppport AppLovin Adapter
 #   s.dependency 'FBAudienceNetwork'
@@ -91,16 +91,16 @@ Pod::Spec.new do |s|
 #    s.dependency 'GoogleMobileAdsMediationMintegral'
 #    s.dependency 'GoogleMobileAdsMediationPangle'
 
-    s.dependency 'FirebaseCore', '11.15.0'
-    s.dependency 'FirebaseRemoteConfig', '11.15.0'
-    s.dependency 'FirebaseABTesting', '11.15.0'
-    s.dependency 'FirebaseAnalytics', '11.15.0'
-    s.dependency 'FirebaseCrashlytics', '11.15.0'
-    s.dependency 'FirebaseMessaging', '11.15.0'
+#    s.dependency 'FirebaseCore', '11.15.0'
+#    s.dependency 'FirebaseRemoteConfig', '11.15.0'
+#    s.dependency 'FirebaseABTesting', '11.15.0'
+#    s.dependency 'FirebaseAnalytics', '11.15.0'
+#    s.dependency 'FirebaseCrashlytics', '11.15.0'
+#    s.dependency 'FirebaseMessaging', '11.15.0'
     
-    s.dependency 'AppsFlyer-AdRevenue', '6.14.3'
-    s.dependency 'AppsFlyerFramework', '6.14.3'
-    s.dependency 'PurchaseConnector', '6.14.3'
-    s.dependency 'SwiftJWT', '3.6.200'
+#    s.dependency 'AppsFlyer-AdRevenue', '6.14.3'
+#    s.dependency 'AppsFlyerFramework', '6.14.3'
+#    s.dependency 'PurchaseConnector', '6.14.3'
+#    s.dependency 'SwiftJWT', '3.6.200'
 
 end
