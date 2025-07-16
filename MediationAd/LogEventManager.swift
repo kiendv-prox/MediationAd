@@ -6,10 +6,8 @@
 //
 
 import Foundation
-
-#if canImport(FirebaseAnalytics)
+import UIKit
 import FirebaseAnalytics
-#endif
 
 class LogEventManager: @unchecked Sendable {
     static let shared = LogEventManager()
@@ -34,7 +32,6 @@ class LogEventManager: @unchecked Sendable {
                 showWarning()
             }
         }
-        
 #endif
         
 #if !DEBUG

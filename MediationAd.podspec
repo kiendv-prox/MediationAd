@@ -22,6 +22,10 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig = {
         'OTHER_LDFLAGS' => '-ObjC'
     }
+    
+    s.user_target_xcconfig = {
+        'OTHER_LDFLAGS' => '-ObjC'
+    }
 
     # Dependency with version pinning
     s.dependency 'AppLovinSDK', '13.3.1'
@@ -92,6 +96,7 @@ Pod::Spec.new do |s|
     s.dependency 'FirebaseABTesting', '11.15.0'
     s.dependency 'FirebaseAnalytics', '11.15.0'
     s.dependency 'FirebaseCrashlytics', '11.15.0'
+    s.dependency 'FirebaseMessaging', '11.15.0'
     
     s.dependency 'AppsFlyer-AdRevenue', '6.14.3'
     s.dependency 'AppsFlyerFramework', '6.14.3'
